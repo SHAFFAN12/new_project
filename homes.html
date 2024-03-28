@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Added styles for drop shadow and shadow color */
+        .drop-shadow {
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+   <header class="header">
+      <nav class="nav container">
+         <div class="nav__data max-w-[calc(100%-6rem)]">
+            <a href="#" class="nav__logo">
+             <img src="./image/Logo.png" alt="" class="w-10 md:w-22 lg:w-40 xl:w-20 max-w-full h-auto">
+             F.S Builders & Developers
+            </a>
+            
+            <div class="nav__toggle" id="nav-toggle">
+               <i class='bx bx-menu-alt-right nav__burger text-4xl text-white-700 '></i>
+               <i class="bx bx-x-circle nav__close text-4xl text-white-700"></i>
+            </div>
+         </div>
+
+         <!--=============== NAV MENU ===============-->
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="index.html" class="nav__link">Home</a></li>
+
+               <!-- <li><a href="#" class="nav__link">Company</a></li> -->
+
+               <!--=============== DROPDOWN 1 ===============-->
+               <li class="dropdown__item">
+                  <div class="nav__link">
+                     Discover Designs <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+
+                  <ul class="dropdown__menu">
+                     <li>
+                        <a href="#about" class="dropdown__link">About Us
+                           </a>                          
+                     </li>
+
+                     <li>
+                        <a href="#services" class="dropdown__link">
+                          Our Services
+                        </a>
+                     </li>
+
+                     <!--=============== DROPDOWN SUBMENU ===============-->
+                     <!-- <li class="dropdown__subitem">
+                        <div class="dropdown__link">
+                           <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                        </div>
+
+                        <ul class="dropdown__submenu">
+                           <li>
+                              <a href="#" class="dropdown__sublink">
+                                 <i class="ri-file-list-line"></i> Documents
+                              </a>
+                           </li>
+   
+                           <li>
+                              <a href="#" class="dropdown__sublink">
+                                 <i class="ri-cash-line"></i> Payments
+                              </a>
+                           </li>
+   
+                           <li>
+                              <a href="#" class="dropdown__sublink">
+                                 <i class="ri-refund-2-line"></i> Refunds
+                              </a>
+                           </li>
+                        </ul>
+                     </li> -->
+                  </ul>
+               </li>
+               
+               
+               <!--=============== DROPDOWN 2 ===============-->
+               <li class="dropdown__item">
+                  <div class="nav__link">
+                     Signature Projects <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+                  
+                  <ul class="dropdown__menu">
+                      <li>
+                          <a href="homes.html" class="dropdown__link">
+                              Homes
+                             </a>                          
+                         </li>
+
+                         <li>
+                             <a href="#" class="dropdown__link">
+                            Kitchen
+                        </a>
+                     </li>
+                     
+                     <li>
+                         <a href="#" class="dropdown__link">
+                              Interiors
+                         </a>
+                     </li>
+                 </ul>
+             </li>
+             
+             <li><a href="#" class="nav__link">Client Testimonials</a></li>
+             <li><a href="#" class="nav__link">Contact</a></li>
+         </ul>
+     </div>
+      </nav>
+   </header>
+
+
+    <section class="pt-20 text-center" id="services">
+      <h1 class="relative inline-block text-2xl md:text-3xl lg:text-4xl p-4">
+         Signature Projects
+         <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full border-b border-gray-300"></span>
+     </h1>
+        <div class="flex flex-wrap gap-5 mt-8 p-2">
+            <img src="./image/home-1.jpg" alt="" class="w-[22rem] drop-shadow">
+            <img src="./image/home-2.jpg" alt="" class="w-[22rem] drop-shadow">
+            <img src="./image/home-3.jpg" alt="" class="w-[22rem] drop-shadow">
+            <img src="./image/home-4.jpg" alt="" class="w-[22rem] drop-shadow">
+            <img src="./image/home-5.jpg" alt="" class="w-[22rem] drop-shadow">
+        </div>
+    </section>
+
+
+    <footer >
+        <div class="Container">
+            <div class="row">
+                <div class="col" id="company">
+                    <img src="./image/Logo.png" alt="" class="logo">
+                    <p>
+                        We are specialized in designings, make your business a brand.
+                        Try our premium services.
+                    </p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/FS.Builders.And.Developers"><i class='bx bxl-facebook-circle hover:text-blue-500 text-[2rem] mt-[2rem] mr-[5px] ease duration-[0.3s]'></i></a>
+                        <a href="https://wa.me/03162120008"><i class='bx bxl-whatsapp hover:text-green-500 text-[2rem]' ></i></a>
+                    </div>
+                </div>
+
+                <!-- <div class="col" id="services">
+                   <h3>Services</h3>
+                   <div class="links">
+                      <a href="#">Home</a>
+                      <a href="#">Creatives</a>
+                      <a href="#">Poster Design</a>
+                      <a href="#">Card Design</a>
+                   </div>
+                </div> -->
+
+                <div class="col" id="useful-links">
+                    <h3>Links</h3>
+                    <div class="links">
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#">Testimonials</a>
+                    </div>
+                </div>
+
+                <div class="col" id="contact">
+                    <h3>Contact</h3>
+                    <div class="contact-details">
+                        <i class='bx bx-phone-incoming text-2xl'></i>
+                        <p>+923152816410</p>
+                    </div>
+                    <div class="contact-details">
+                        <i class='bx bx-phone-incoming text-2xl'></i>
+                        <p>+923162120008</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
